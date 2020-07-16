@@ -52,6 +52,7 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <Header />
+
       <Container>
         {balance && (
           <CardContainer>
