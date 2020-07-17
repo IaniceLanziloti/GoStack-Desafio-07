@@ -105,7 +105,7 @@ const Dashboard: React.FC = () => {
                     <td className={transaction.type}>
                       {transaction.type === 'income'
                         ? formatValue(transaction.value)
-                        : formatValue(-transaction.value)}
+                        : `- ${formatValue(transaction.value)}`}
                     </td>
                     <td>{transaction.category.title}</td>
                     <td>{transaction.formattedDate}</td>
